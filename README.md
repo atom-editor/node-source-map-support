@@ -1,6 +1,4 @@
-##### Atom and all repositories under Atom will be archived on December 15, 2022. Learn more in our [official announcement](https://github.blog/2022-06-08-sunsetting-atom/)
- # Source Map Support
-[![Build Status](https://travis-ci.org/evanw/node-source-map-support.svg?branch=master)](https://travis-ci.org/evanw/node-source-map-support)
+# Source Map Support
 
 This module provides source map support for stack traces in node via the [V8 stack trace API](http://code.google.com/p/v8/wiki/JavaScriptStackTraceApi). It uses the [source-map](https://github.com/mozilla/source-map) module to replace the paths and line numbers of source-mapped files with their original paths and line numbers. The output mimics node's stack trace format with the goal of making every compile-to-JS language more of a first-class citizen. Source maps are completely general (not specific to any one language) so you can use source maps with multiple compile-to-JS languages in the same node process.
 
@@ -92,8 +90,8 @@ require('source-map-support').install({
 });
 ```
 
-The module will by default assume a browser environment if XMLHttpRequest and window are defined. If either of these do not exist it will instead assume a node environment. 
-In some rare cases, e.g. when running a browser emulation and where both variables are also set, you can explictly specify the environment to be either 'browser' or 'node'. 
+The module will by default assume a browser environment if XMLHttpRequest and window are defined. If either of these do not exist it will instead assume a node environment.
+In some rare cases, e.g. when running a browser emulation and where both variables are also set, you can explictly specify the environment to be either 'browser' or 'node'.
 
 ```js
 require('source-map-support').install({
@@ -188,7 +186,7 @@ Error: this is a demo
     at startup (node.js:119:16)
     at node.js:901:3
 ```
-    
+
 #### CoffeeScript Demo
 
 demo.coffee:
